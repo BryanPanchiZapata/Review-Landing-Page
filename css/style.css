@@ -1,0 +1,151 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.nav{
+  width: 100%;
+  background: #000000;
+  display: flex;
+  height: 75px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo{
+  padding: 10px 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.nav__ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav__ul li{
+  list-style: none;
+}
+.nav__ul a{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  font-size: .9rem;
+}
+
+.main{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 60px 0;
+  color: #000;
+}
+h1{
+  font-size: 1.6rem;
+}
+.title{
+  padding: 0 30px;
+  flex-basis: 115%;
+}
+.title__texts{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+span{
+  color: #5AC060;
+}
+.title__paragraph{
+  font-size: .9rem;
+  margin-top: 10px;
+}
+.section__subtitle{
+  background: #5AC060;
+  margin: 0 30px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+.subtitle__title{
+    font-size:.9rem;
+    margin-bottom: 10px;
+}
+.subtitle__paragraph{
+  font-size: .9rem;
+  line-height: 2;
+}
+
+.footer{
+  margin: 0 50px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+.footer__pages{
+  display: flex;
+  color: #000;
+}
+.pages__anterior{
+  margin-right: 9px;
+}
+.footer__social a{
+  margin-right: 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__logo{
+  color: #000;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 760px){
+  .nav{
+    justify-content: center;
+    height: 110px;
+  }
+  .nav__ul{
+    justify-content: center;
+  }
+  .nav__ul a{
+    line-height: 2;
+    margin-right: 15px;
+  }
+  .nav__ul a:hover{
+    border-bottom: 2px solid #4AA25E;
+    transition: .3s all ;
+  }
+  .logo{
+    margin-right: 0;
+  }
+
+  .main{
+    flex-direction: column;
+    text-align: justify;
+  }
+  .title{
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .section__subtitle{
+    margin: 10px 0;
+  }
+  
+  .footer{
+    flex-direction: column;
+    padding: 10px 0;  
+  }
+  .footer__pages{
+    place-self: center;
+  }
+  .footer__social{
+    margin: 20px 0;  
+    text-align: center;
+  }
+  .footer__social a{
+    margin: 0 10px;
+    line-height: 2;
+  }
+  .footer__logo{
+    place-self: center;
+    
+  }
+}
